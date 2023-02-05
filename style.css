@@ -9,11 +9,13 @@
 :root {
 	--primary-color: #1a0d00;
 	--secondary-color: #d17c30;
+	--bg-color: #f2f2f2;
 }
 
 body {
 	font-family: sans-serif;
 	color: var(--primary-color);
+	background: var(--bg-color);
 }
 
 .title {
@@ -81,8 +83,4 @@ body {
 	gap: 0.3rem;
 	align-items: center;
 	margin-top: 2rem;
-}
-
-#autofetch {
-	background: var(--secondary-color);
 }
