@@ -66,7 +66,7 @@ body {
 	background: var(--primary-color);
 	border: none;
 	border-radius: 999rem;
-	margin-top: 2rem;
+	margin-top: 1rem;
 	padding: 1rem 3rem;
 	transition: scale 0.3s ease-in;
 	cursor: pointer;
@@ -78,9 +78,55 @@ body {
 	scale: 1.1;
 }
 
-.autofetch {
+.checkbox {
 	display: flex;
 	gap: 0.3rem;
 	align-items: center;
+	user-select: none;
+}
+
+.autofetch {
+	margin-top: 1rem;
+}
+
+.options {
+	min-width: 300px;
+	width: 70%;
+	max-width: 600px;
 	margin-top: 2rem;
+}
+
+.options-title {
+	width: fit-content;
+	margin-bottom: 1rem;
+	cursor: pointer;
+}
+
+.options-container {
+	margin-left: 2rem;
+}
+
+.selectbreed {
+	margin-bottom: 1rem;
+}
+
+.breeds-list {
+	display: none;
+}
+.breeds-list.show {
+	display: block;
+}
+
+.input {
+	font-size: 1rem;
+	color: var(--primary-color);
+	background: none;
+	border: none;
+	border-bottom: 2px solid var(--primary-color);
+	outline: none;
+	padding: 0.1rem 0.5rem;
+	transition: border-color 0.3s ease-in;
+}
+.input:focus {
+	border-color: var(--secondary-color);
 }

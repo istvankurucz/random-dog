@@ -17,10 +17,26 @@
 
 			<button class="button">New dog</button>
 
-			<div class="autofetch">
+			<div class="checkbox autofetch">
 				<input type="checkbox" name="autofetch" id="autofetch" />
 				<label for="autofetch">Show a new dog after 5 seconds</label>
 			</div>
+
+			<details class="options">
+				<summary class="options-title">Options</summary>
+
+				<form class="options-container">
+					<div class="checkbox selectbreed">
+						<input type="checkbox" name="selectbreed" id="selectbreed" />
+						<label for="selectbreed">Show dogs from one breed</label>
+					</div>
+
+					<div class="breeds-list">
+						<input list="breeds" type="text" class="input" id="selectedbreed" placeholder="Select breed" />
+						<datalist id="breeds"></datalist>
+					</div>
+				</form>
+			</details>
 		</div>
 
 		<script src="main.js" type="module"></script>
